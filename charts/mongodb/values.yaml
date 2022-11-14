@@ -1,0 +1,9 @@
+mongodb:
+  architecture: replicaset
+  replicaCount: 3
+  persistence:
+    enabled: true
+  auth:
+    enabled: true
+    rootUser: root
+    rootPassword: password

@@ -1,0 +1,7 @@
+apiVersion: v2
+name: argo-cd
+version: 1.0.0
+dependencies:
+  - name: mongodb
+    version: 13.3.0
+    repository: https://charts.bitnami.com/bitnami

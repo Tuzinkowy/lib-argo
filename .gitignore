@@ -1,2 +1,3 @@
 charts/argo-cd/charts
 charts/ingress-nginx/charts
+charts/mongodb/charts
