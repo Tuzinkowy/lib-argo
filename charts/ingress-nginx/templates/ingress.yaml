@@ -6,8 +6,7 @@ metadata:
   name: argo
 spec:
   rules:
-  - host: a2d388db44a1247b9828b81e560bd084-1340101577.eu-central-1.elb.amazonaws.com
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
