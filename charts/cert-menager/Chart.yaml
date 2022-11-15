@@ -1,0 +1,7 @@
+apiVersion: v2
+name: argo-cd
+version: 1.0.0
+dependencies:
+  - name: cert-manager
+    version: 1.10.0
+    repository: https://charts.jetstack.io
