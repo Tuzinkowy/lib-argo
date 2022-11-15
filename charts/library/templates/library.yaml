@@ -36,7 +36,7 @@ metadata:
   labels:
     app: library
 spec:
-  type: LoadBalancers
+  type: LoadBalancer
   selector:
     app: library
   ports:
