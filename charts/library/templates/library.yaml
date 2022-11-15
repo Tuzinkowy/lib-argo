@@ -36,7 +36,7 @@ metadata:
   labels:
     app: library
 spec:
-  type: ClusterIP
+  type: LoadBalancers
   selector:
     app: library
   ports:
