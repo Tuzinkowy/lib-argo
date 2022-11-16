@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-crm
+  labels:
+    app: demo-crem
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-crm
+  template:
+    metadata:
+      labels:
+        app: demo-crm
+    spec:
+      containers:
+      - name: demo-crm
+        image: pwstaging/demo-crm:latest
+        ports:
+        - containerPort: 3000
+        envFrom:
+          - configMapRef:
+              name: configmap
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: clusterip-demo-crm
+  labels:
+    app: demo-crm
+spec:
+  type: ClusterIP
+  selector:
+    app: demo-crm
+  ports:
+  - protocol: TCP
+    name: http
+    port: 80
+    targetPort: 3000
