@@ -12,6 +12,6 @@ spec:
         pathType: Prefix
         backend:
           service: 
-            name: clusterip-library
+            name: clusterip-demo-crm 
             port: 
               number: 80
