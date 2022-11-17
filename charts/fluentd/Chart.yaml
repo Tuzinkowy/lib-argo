@@ -1,0 +1,7 @@
+apiVersion: v2
+name: argo-cd
+version: 1.0.0
+dependencies:
+  - name: fluentd
+    version: 0.3.9
+    repository: https://fluent.github.io/helm-charts
