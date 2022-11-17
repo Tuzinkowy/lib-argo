@@ -22,4 +22,4 @@ volumeClaimTemplate:
   storageClassName: "standard"
   resources:
     requests:
-      storage: 1000M
+      storage: 100M
