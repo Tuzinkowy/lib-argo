@@ -5,13 +5,18 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
+  tls:
+  - hosts:
+    - batcow.ddns.net
+    secretName: portfolio-app-tls
   rules:
-  - http: 
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service: 
-            name: clusterip-library
-            port: 
-              number: 80
+  - host: batcow.ddns.net
+    http: 
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service: 
+              name: clusterip-library
+              port: 
+                number: 80
