@@ -5,7 +5,7 @@ elasticksearch:
   esJavaOpts: "-Xmx128m -Xms128m"
 
   minimumMasterNodes: 1
-  replicas: 1
+  replicas: 3
 
   # Allocate smaller chunks of memory per pod.
   resources:
@@ -17,9 +17,9 @@ elasticksearch:
       memory: "512M"
 
   # Request smaller persistent volumes.
-  volumeClaimTemplate:
-    accessModes: [ "ReadWriteOnce" ]
-    storageClassName: "standard"
-    resources:
-      requests:
-        storage: 100M
+  #volumeClaimTemplate:
+  #  accessModes: [ "ReadWriteOnce" ]
+  #  storageClassName: "standard"
+  #  resources:
+  #    requests:
+  #      storage: 100M
