@@ -15,7 +15,7 @@ roles:
   remote_cluster_client: "true"
   ml: "true"
 
-replicas: 1
+replicas: 3
 minimumMasterNodes: 1
 
 esMajorVersion: ""
@@ -75,15 +75,15 @@ podAnnotations:
 # additionals labels
 labels: {}
 
-esJavaOpts: "" # example: "-Xmx1g -Xms1g"
+esJavaOpts: "-Xmx128m -Xms128m" # example: "-Xmx1g -Xms1g"
 
 resources:
   requests:
     cpu: "100m"
-    memory: "512Gi"
+    memory: "512M"
   limits:
     cpu: "1000m"
-    memory: "2512Gi"
+    memory: "512M"
 
 initResources:
   {}
@@ -167,7 +167,7 @@ antiAffinityTopologyKey: "kubernetes.io/hostname"
 
 # Hard means that by default pods will only be scheduled if there are enough nodes for them
 # and that they will never end up on the same node. Setting this to soft will do this "best effort"
-antiAffinity: "hard"
+antiAffinity: "soft"
 
 # This is the node affinity settings as defined in
 # https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#node-affinity-beta-feature
