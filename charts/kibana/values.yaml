@@ -1,5 +1,5 @@
 kibana:
-  replicas: 3
+  replicas: 1
   files:
     kibana.yml:
       server.name: efk-logging-kibana
@@ -10,7 +10,7 @@ kibana:
   resources:
     limits:
       cpu: "500m"
-      memory: "1Gi"
+      memory: "500M"
     requests:
       cpu: "500m"
-      memory: "1Gi"
+      memory: "500M"
