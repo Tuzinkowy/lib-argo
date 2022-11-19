@@ -1,7 +1,0 @@
-apiVersion: v2
-name: argo-cd
-version: 1.0.0
-dependencies:
-  - name: grafana
-    version: 6.44.5
-    repository: https://grafana.github.io/helm-charts
