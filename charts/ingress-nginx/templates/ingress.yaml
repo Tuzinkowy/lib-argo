@@ -20,6 +20,6 @@ spec:
           pathType: Prefix
           backend:
             service: 
-              name: clusterip-library
+              name: library
               port: 
                 number: 80
