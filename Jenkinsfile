@@ -14,7 +14,7 @@ node {
     stage('Update GIT') {
         
         sh "cat ./charts/library/Chart.yaml"
-        sh "sed -i 's/appVersion:*/appVersion: ${CHARTVER}/g' ./charts/library/Chart.yaml"
+        sh "sed -i 's/appVersion: */appVersion: ${CHARTVER}/g' ./charts/library/Chart.yaml"
         sh "cat ./charts/library/Chart.yaml"
     /*    sh "git add ."
         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
