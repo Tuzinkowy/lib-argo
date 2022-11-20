@@ -13,7 +13,7 @@ node {
 
     stage('Update GIT') {
         
-        sh "cat ./charts/library/Chart.yaml"
+        cat ./charts/library/Chart.yaml
     /*    sh "sed -i 'appVersion.*+appVersion: "params.CHARTVER"+g' Chart.yaml"
         sh "cat ./charts/library/Chart.yaml"
         sh "git add ."
