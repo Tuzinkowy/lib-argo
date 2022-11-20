@@ -8,7 +8,7 @@ node {
 
     stage('test') {
         
-        sh "echo $(params.CHARTVER)"
+        echo $(params.CHARTVER)
     }
 
 /*    stage('Update GIT') {
