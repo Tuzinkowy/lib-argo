@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus_&_grafana
+  name: prometheus-&-grafana
   namespace: default
   finalizers:
   - resources-finalizer.argocd.argoproj.io
