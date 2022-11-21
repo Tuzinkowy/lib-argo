@@ -7,3 +7,4 @@ charts/elasticsearch/charts/elasticsearch-7.17.3.tgz
 charts/prometheus&grafana/charts
 charts/cert-manager/charts
 charts/alb/charts
+charts/external-dns/charts

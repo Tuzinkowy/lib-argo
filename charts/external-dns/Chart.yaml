@@ -1,0 +1,7 @@
+apiVersion: v2
+name: argo-cd
+version: 1.0.0
+dependencies:
+  - name: external-dns
+    version: 6.12.0
+    repository: https://charts.bitnami.com/bitnami 
