@@ -46,6 +46,7 @@ ingress:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:644435390668:certificate/22271650-d349-4943-a525-8d0079c07bbc
+    kubernetes.io/ingress.class: alb
   
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
