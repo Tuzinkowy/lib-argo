@@ -1,8 +1,8 @@
 charts/argo-cd/charts
 charts/ingress-nginx/charts
 charts/mongodb/charts
-charts/cert-menager/charts
 charts/fluentd/charts
 charts/kibana/charts
 charts/elasticsearch/charts/elasticsearch-7.17.3.tgz
 charts/prometheus&grafana/charts
+charts/cert-manager/charts
