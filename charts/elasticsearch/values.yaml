@@ -5,7 +5,7 @@ elasticksearch:
   esJavaOpts: "-Xmx128m -Xms128m"
 
   minimumMasterNodes: 1
-  replicas: 3
+  replicas: 1
 
   # Allocate smaller chunks of memory per pod.
   resources:
