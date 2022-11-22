@@ -1,10 +1,7 @@
 elasticsearch:
 
-
-
   minimumMasterNodes: 1
   replicas: 1
-
 
   # Allocate smaller chunks of memory per pod.
   resources:
