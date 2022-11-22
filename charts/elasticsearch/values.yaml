@@ -1,11 +1,10 @@
-elasticksearch:
-  antiAffinity: "soft"
+elasticsearch:
 
-  # Shrink default JVM heap.
-  esJavaOpts: "-Xmx128m -Xms128m"
+
 
   minimumMasterNodes: 1
   replicas: 1
+
 
   # Allocate smaller chunks of memory per pod.
   resources:
@@ -15,6 +14,11 @@ elasticksearch:
     limits:
       cpu: "1000m"
       memory: "512M"
+
+  # Shrink default JVM heap.
+  esJavaOpts: "-Xmx128m -Xms128m"
+
+  antiAffinity: "soft"
 
   # Request smaller persistent volumes.
   #volumeClaimTemplate:
