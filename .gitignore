@@ -8,3 +8,4 @@ charts/prometheus&grafana/charts
 charts/cert-manager/charts
 charts/alb/charts
 charts/external-dns/charts
+magazin
