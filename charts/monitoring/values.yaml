@@ -12,6 +12,8 @@ kube-prometheus-stack:
     enabled: false
   kubeScheduler:
     enabled: false
+  nodeExporter:
+    enabled: false
   prometheus:
     prometheusSpec:
       serviceMonitorSelector:
