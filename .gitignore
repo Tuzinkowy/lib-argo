@@ -9,4 +9,4 @@ charts/cert-manager/charts
 charts/alb/charts
 charts/external-dns/charts
 magazin
-charts/monitoring/charts
+charts/monitoring/charts/kube-prometheus-stack-41.9.1.tgz
