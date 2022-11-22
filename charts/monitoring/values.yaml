@@ -2,7 +2,10 @@ kube-prometheus-stack:
   defaultRules:
     rules:
       etcd: false
-      kubeScheduler: false
+      kubeSchedulerAlerting: false
+      kubeSchedulerRecording: false
+      nodeExporterAlerting: false
+      nodeExporterRecording: false
   kubeControllerManager:
     enabled: false
   kubeEtcd:
