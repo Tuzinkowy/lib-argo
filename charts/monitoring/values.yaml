@@ -14,13 +14,6 @@ kube-prometheus-stack:
     enabled: false
   nodeExporter:
     enabled: false
-  prometheus:
-    prometheusSpec:
-      serviceMonitorSelector:
-        matchLabels:
-          prometheus: monitoring
-  commonLabels:
-    prometheus: monitoring
   grafana:
     adminPassword: SecretPassword
     service:
