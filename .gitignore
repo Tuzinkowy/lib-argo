@@ -11,3 +11,4 @@ charts/external-dns/charts
 magazin
 charts/monitoring/charts/kube-prometheus-stack-41.9.1.tgz
 charts/promethrus/charts
+charts/grafana/charts
