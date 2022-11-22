@@ -8,7 +8,7 @@ spec:
   tls:
   - hosts:
     - batcow.ddns.net
-    secretName: library-cert
+    secretName: portfolio-app-tls
   rules:
   - host: batcow.ddns.net
     http: 
