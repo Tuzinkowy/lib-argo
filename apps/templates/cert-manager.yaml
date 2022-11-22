@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus-and-grafana
-  namespace: default
+  name: cert-manager
+  namespace: cert-manager
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: prometheus
+    namespace: default
   project: default
   source:
-    path: charts/monitoring
+    path: charts/cert-manager
     repoURL: https://github.com/Tuzinkowy/lib-argo.git
     targetRevision: HEAD
   syncPolicy:
