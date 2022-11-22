@@ -3,17 +3,12 @@ kind: Ingress
 metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:644435390668:certificate/5da20103-3c83-407f-acf9-bee5f36be851
     external-dns.alpha.kubernetes.io/hostname: marcinlib.click
     kubernetes.io/ingress.class: alb
   name: library
 spec:
-  tls:
-  - hosts:
-    - marcinlib.click
   rules:
-  - host: marcinlib.click
-    http: 
+  - http: 
         paths:
         - path: /
           pathType: Prefix
